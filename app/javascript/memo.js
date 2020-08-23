@@ -13,22 +13,26 @@ function memo() {
       }
       const item = XHR.response.post;
       const list = document.getElementById("list");
-      const formText = document.getElementById("name");
-      const formText = document.getElementById("message");
+      const formText1 = document.getElementById("name");
+      const formText2 = document.getElementById("message");
       const HTML = `
         <div class="post" data-id=${item.id}>
+          <span class="post-id">
+            ${item.id}
+          </span>
           <span class="post-name">
-          ${item.name}
+            ${item.name}
           </span>
           <span class="post-date">
-          ${item.created_at}
+            ${item.created_at}
           </span>
           <div class="post-message">
-          ${item.message}
+            ${item.message}
           </div>
         </div>`;
       list.insertAdjacentHTML("afterend", HTML);
-      formText.value = "";
+      formText1.value = "";
+      formText2.value = "";
     };
     e.preventDefault();
   });

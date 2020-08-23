@@ -11,8 +11,7 @@ body {
   background-color: #F8F8FF;
   border-right: 2px solid #A9A9A9;
   border-bottom: 2px solid #A9A9A9;
-  margin-left: 10px;
-  margin-bottom: 10px;
+  margin: 10px 10px;
 }
 
 .post-name {
@@ -26,5 +25,5 @@ body {
 }
 
 div[data-check="true"] {
-  background: pink;
+  background: lightpink;
 }
