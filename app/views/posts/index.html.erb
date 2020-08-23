@@ -1,7 +1,10 @@
 <h1>⭐️２ちゃんねる掲示板⭐️</h1>
-<div class="new">
-<%= link_to "新規投稿ページ", 'posts/new'%><br><br>
-</div>
+<%= form_with url:  "/posts", method: :post,id: "form" do |form| %>
+  <%= form.text_field :name, placeholder: '名前', size: 15 %><br><br>
+  <%= form.text_area :message, placeholder: '投稿内容', size: "48x5" %><br>
+  <%= form.submit 'OK' , id: "submit" %>
+<% end %>
+
 <% @posts.each do |post|%>
   <div class="post">
     <span class="post-id">
