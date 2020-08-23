@@ -1,9 +1,12 @@
 <h1>⭐️２ちゃんねる掲示板⭐️</h1>
 <%= form_with url:  "/posts", method: :post,id: "form" do |form| %>
-  <%= form.text_field :name, placeholder: '名前', size: 15 %><br><br>
+  <%= form.text_field :name, id: "message", placeholder: '名前', size: 15 %><br><br>
   <%= form.text_area :message, placeholder: '投稿内容', size: "48x5" %><br>
   <%= form.submit 'OK' , id: "submit" %>
 <% end %>
+
+<div id="list">
+</div>
 
 <% @posts.each do |post|%>
 <div class="post" data-id=<%= post.id %> data-check=<%= post.checked %>>
