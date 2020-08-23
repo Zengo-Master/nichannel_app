@@ -1,0 +1,6 @@
+<h1>新規投稿ページ</h1>
+<%= form_with url: '/posts', method: :post, local: true do |form|%>
+  名前<br><%= form.text_field :name%><br><br>
+  投稿内容<br><%= form.text_area :message, placeholder: "誹謗中傷禁止！", rows: "5"%><br><br>
+  <%= form.submit "投稿する"%>
+<% end %>

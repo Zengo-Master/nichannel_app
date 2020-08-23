@@ -1,0 +1,26 @@
+body {
+  background-color: #F3FFD8;
+}
+
+.new {
+  font-size: larger;
+}
+
+.post {
+  width: 500px ;
+  background-color: #F8F8FF;
+  border-right: 2px solid #A9A9A9;
+  border-bottom: 2px solid #A9A9A9;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.post-name {
+  color: green;
+  font-weight: bold;
+  font-size: larger;
+}
+
+.post-message {
+  padding: 10px 5px;
+}
