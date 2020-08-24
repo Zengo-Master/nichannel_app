@@ -1,7 +1,7 @@
 <h1>⭐️２ちゃんねる掲示板⭐️</h1>
 <%= form_with url:  "/posts", method: :post,id: "form" do |form| %>
   <%= form.text_field :name, id: "name", placeholder: '名前', size: 15 %><br><br>
-  <%= form.text_area :message, id: "message", placeholder: '投稿内容', size: "48x5" %><br>
+  <%= form.text_area :message, id: "message", placeholder: '投稿内容（誹謗中傷は禁止！）', size: "48x5" %><br>
   <%= form.submit 'OK' , id: "submit" %>
 <% end %>
 
