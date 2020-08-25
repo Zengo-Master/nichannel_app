@@ -17,9 +17,6 @@ function memo() {
       const formText2 = document.getElementById("message");
       const HTML = `
         <div class="post" data-id=${item.id}>
-          <span class="post-id">
-            ${item.id}
-          </span>
           <span class="post-name">
             ${item.name}
           </span>
