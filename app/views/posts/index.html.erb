@@ -1,7 +1,7 @@
 <h1>アイデア管理所</h1>
 <%= form_with url:  "/posts", method: :post,id: "form" do |form| %>
-  <%= form.text_field :name, id: "name", placeholder: '名前', size: 15 %><br><br>
-  <%= form.text_area :message, id: "message", placeholder: 'アイデア', size: "48x5" %><br>
+  <%= form.text_field :category, id: "name", placeholder: 'カテゴリー', size: 15 %><br><br>
+  <%= form.text_area :idea, id: "message", placeholder: 'アイデア', size: "48x5" %><br>
   <%= form.submit 'Submit' , id: "submit" %><br><br>
 <% end %>
 
